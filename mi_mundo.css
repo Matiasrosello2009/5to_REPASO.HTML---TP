@@ -1,0 +1,19 @@
+body{
+    background-color: lightgreen;
+}
+h1{
+    color: blue;
+    text-align: center;
+    font-size: 28px;
+}
+p{
+    font-family: Georgia, serif;
+    font-size: 18px;
+}
+ul{
+    font-weight: bold;
+    color: brown;
+}
+img{
+    border: 3px dotted black;
+}

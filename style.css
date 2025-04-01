@@ -2,6 +2,9 @@ h1{
     background-color: rgb(255, 28, 28);
     text-align: center;
 }
+#titulo-grande{
+    font-size: 30px;
+}
 body{
     background-color: lightgrey;
 }
@@ -14,7 +17,30 @@ h2{
 }
 img{
     border: 2px;
+    width: 200px;
 }
 #resaltador{
     background-color: green;
+}
+div{
+    margin: 15px;
+}
+table{
+    padding: 10px;
+}
+ul li{
+    color: purple;
+}
+#párrafo-combinado{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 16px;
+    background-color: yellow;
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table td, table th{
+    padding: 5px;
+    border: 1px solid black;
 }
