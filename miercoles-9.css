@@ -5,8 +5,12 @@ h1{
     border: 1px solid black;
     border-radius: 1rem;
     width: 300px;
-    box-shadow: 0 0 10px rgba(0,0,0,0,2);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background-color: rgb(252, 244, 244);
 }
 img{
     border-radius: 1rem;
+}
+body{
+    background-color: rgb(240, 255, 228);
 }
