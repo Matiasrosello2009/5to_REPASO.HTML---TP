@@ -20,3 +20,7 @@ console.log(colores)
 
 colores[1] = 'marron' 
 console.log(colores)
+
+for (let index = 0; index < colores.length; index++){
+    console.log(colores[index])
+}
