@@ -45,3 +45,15 @@ console.log(frutas)
 
 console.log('El tamaño del arreglo es ' + frutas.length[3])
 
+let nombres = ['Mati', 'Daniel', 'Abel', 'Miguel']
+
+console.log('El tamaño del arreglo es ' + nombres.length[4])
+
+nombres.push('Roberto', 'Álvaro')
+console.log(nombres[nombres.length -1])
+
+let numeros = ('1', '2', '3', '4', '5')
+
+for (let index = 0; index < numeros.length; index++){
+    console.log(numeros[index])
+}
