@@ -57,3 +57,20 @@ let numeros = ('1', '2', '3', '4', '5')
 for (let index = 0; index < numeros.length; index++){
     console.log(numeros[index])
 }
+
+let suma = 0; 
+
+for (let i = 0; i < numeros.length; i++){
+    suma += numeros[i];
+}
+
+console.log("La suma de los números es:", suma);
+
+let palabras = [];
+
+for (let i = 0; i < 5; i++) {
+    let palabra = prompt(`Escribe la palabra #${i + 1}:`);
+    palabras.push(palabra); 
+}
+
+console.log("Las palabras ingresadas son:", palabras); 
