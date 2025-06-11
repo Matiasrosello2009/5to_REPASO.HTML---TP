@@ -1,4 +1,4 @@
-//TRABAJO PRACTICO N. 1// 
+//----------TRABAJO PRACTICO N. 1----------// 
 
 let colores = ['rojo', 'azul', 'verde', 'amarillo', 'naranja']; 
 
@@ -27,7 +27,7 @@ for (let index = 0; index < colores.length; index++){
     console.log(colores[index])
 }
 
-// TRABAJO PRACTICO N.2// 
+// ----------TRABAJO PRACTICO N.2----------// 
 
 let frutas = ['sandia', 'naranja', 'uva']
 
@@ -74,3 +74,32 @@ for (let i = 0; i < 5; i++) {
 }
 
 console.log("Las palabras ingresadas son:", palabras); 
+
+// ----------TRABAJO PRACTICO N.3----------// 
+
+let animales = ["perro", "gato", "conejo", "loro"]; 
+
+for (let i = 0; i < 5; i++){
+    console.log(animales)
+}
+
+for (let i = 0; i < animales.length; i += 2) {
+if (i % 2 === 0){
+    console.log(animales[i]);
+    }
+}
+
+let numerosTP3 = [4, 7, 2, 9, 5];
+
+for (let i = 0; i < numerosTP3.length; i++){
+    suma += numerosTP3[i];
+}
+console.log("La suma de los números es:", suma);
+
+let datos = [3, 6, 1, 8];
+
+let multiplicacion = []
+for(let i = 0; i < numerosTP3.length; i++){
+    multiplicacion.push(datos[i] * 2)
+}
+console.log(multiplicacion);
