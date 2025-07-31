@@ -1,4 +1,4 @@
-//Un objeto se crea con una variable, con llaves, y "claves". Si se quiere poner mas de una clave, se deben separar con coma.
+//Un objeto se crea con una variable, con llaves, y "propiedades". Si se quiere poner mas de una propiedad, se deben separar con coma.
 
 let estudiante = {
     nombre: 'Mati', 
@@ -20,22 +20,22 @@ let estudiantes = [
     {
         nombre: 'YoX2',
         apellido: 'Otra vez',
-        edad: '61'
+        edad: '17'
     },
     {
         nombre: 'YoX3',
         apellido: 'Again',
-        edad: '160'
+        edad: '18'
     },
     {
         nombre: 'YoX4',
-        apellido: 'I',
-        edad: '061'
+        apellido: 'De Nuevo',
+        edad: '19'
     },
     {
         nombre: 'YoX5',
-        apellido: 'i',
-        edad: '000'
+        apellido: 'Acá',
+        edad: '20'
     }
 ]
 
