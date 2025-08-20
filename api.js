@@ -4,9 +4,11 @@ let boton = document.querySelector('#boton');
 
 boton.onClick = function (){
     fetch('https://pokeapi.co/api/v2/pokemon-form/157/')
-    .then(respuesta => respuesta.json{
-    .then(datos => console.log(datos)
+    .then(respuesta => respuesta.json())
+    .then(datos => {
+    console.log(datos)
+    
     titulo.textContent = datos.name + ' #' + datos.id
-    imagen.src = datos.sprites.front_shiny
-    }))
+    imagen.src = datos.sprites.front_shiny)
+    })
 }
