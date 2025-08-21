@@ -1,12 +1,60 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Práctica API</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Practica API</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .cards-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 1.1em;
+      margin: 0 0 10px 0;
+      font-weight: bold;
+    }
+
+    .card-info {
+      font-size: 0.9em;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    
+  <h1>Personajes</h1>
+  <div class="cards-container" id="cards-container"></div>
+
+  <script src="api2.js"></script>
 </body>
 </html>
