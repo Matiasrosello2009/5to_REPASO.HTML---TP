@@ -1,51 +1,30 @@
-const personajes = [
-    {
-      nombre: "Rick Sanchez",
-      estado: "Vivo",
-      especie: "Humano",
-      imagen: "https://rickandmortyapi.com/api/character/avatar/1.jpeg"
-    },
-    {
-      nombre: "Morty Smith",
-      estado: "Vivo",
-      especie: "Humano",
-      imagen: "https://rickandmortyapi.com/api/character/avatar/2.jpeg"
-    },
-    {
-      nombre: "Summer Smith",
-      estado: "Vivo",
-      especie: "Humano",
-      imagen: "https://rickandmortyapi.com/api/character/avatar/3.jpeg"
-    },
-    {
-      nombre: "Beth Smith",
-      estado: "Vivo",
-      especie: "Humano",
-      imagen: "https://rickandmortyapi.com/api/character/avatar/4.jpeg"
-    },
-    {
-      nombre: "Jerry Smith",
-      estado: "Vivo",
-      especie: "Humano",
-      imagen: "https://rickandmortyapi.com/api/character/avatar/5.jpeg"
+let container = document.getElementById("cards-container");
+
+let obtenerPokemon = async (cantidad) => {
+  for (let i = 1; i <= cantidad; i++) {
+    try {
+      let res = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
+      let data = await res.json();
+
+      let nombre = data.name;
+      let imagen = data.sprites.other["official-artwork"].front_default;
+      let tipos = data.types.map(t => t.type.name).join(", ");
+
+      let card = document.createElement("div");
+      card.className = "card";
+
+      card.innerHTML = `
+        <img src="${imagen}" alt="${nombre}">
+        <div class="card-body">
+          <div class="card-title">${nombre}</div>
+          <div class="card-info">Tipo: ${tipos}</div>
+        </div>`;
+
+      container.appendChild(card);
+    } catch (error) {
+      console.error(`Error cargando el Pokémon #${i}:`, error);
     }
-  ];
-  
-  const contenedor = document.getElementById("cards-container");
-  
-  personajes.forEach(personaje => {
-    const card = document.createElement("div");
-    card.className = "card";
-  
-    card.innerHTML = `
-      <img src="${personaje.imagen}" alt="${personaje.nombre}">
-      <div class="card-body">
-        <div class="card-title">${personaje.nombre}</div>
-        <div class="card-info">Estado: ${personaje.estado}</div>
-        <div class="card-info">Especie: ${personaje.especie}</div>
-      </div>
-    `;
-  
-    contenedor.appendChild(card);
-  });
-  
+  }
+};
+
+obtenerPokemon(20);
